@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
-    if type(roman_string) is not str or
-            roman_string is None:
+    if roman_string is None or
+            (not isinstance(roman_string, str)):
         return (0)
 
     roman_dic = {
