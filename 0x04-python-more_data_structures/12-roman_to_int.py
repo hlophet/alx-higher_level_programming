@@ -21,7 +21,7 @@ def roman_to_int(roman_string):
         current = roman_dic[roman_string[i]]
         next = roman_dic[roman_string[i + 1]]
 
-        if (i != (len(roman_string) - 1) and current < next):
+        if (i != (len(roman_string) - 1) and (current < next)):
                 numb += roman_dic[roman_string[i]] * -1
         else:
             numb += roman_dic[roman_string[i]]
