@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+def weight_average(my_list=[]):
+    if (len(my_list) or
+          not isinstance(my_list, list)  == 0):
+        return (0)
+
+    avg = 0
+    size = 0
+
+    for tup in my_list:
+        avg += (tup[0] * tup[1])
+        size += tup[1]
+
+    return (avg / size)
